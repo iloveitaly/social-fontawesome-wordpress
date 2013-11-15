@@ -1,0 +1,42 @@
+#social-fontawesome {
+  font-size: 30px;
+}
+#social-fontawesome:before {
+  content: 'SPREAD THE WORD: ';
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 18px;
+  vertical-align: middle;
+  padding-right: 5px;
+}
+#social-fontawesome a {
+  font-size: 30px;
+  padding-right: 5px;
+}
+#social-fontawesome a:hover {
+  text-decoration: none;
+}
+#social-fontawesome .icon-facebook {
+  color: #304890;
+}
+#social-fontawesome .icon-facebook:hover {
+  color: #23356a;
+}
+#social-fontawesome .icon-google-plus {
+  color: #d34836;
+}
+#social-fontawesome .icon-google-plus:hover {
+  color: #b03626;
+}
+#social-fontawesome .icon-twitter {
+  color: #4099ff;
+}
+#social-fontawesome .icon-twitter:hover {
+  color: #0d7eff;
+}
+#social-fontawesome .icon-pinterest {
+  color: #d0251e;
+}
+#social-fontawesome .icon-pinterest:hover {
+  color: #a31d18;
+}

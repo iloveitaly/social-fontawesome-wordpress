@@ -1,0 +1,43 @@
+#social-fontawesome {
+	font-size: 30px;
+
+	&:before {
+		content:'SPREAD THE WORD: ';
+		letter-spacing: 1px;
+		font-weight: bold;
+		font-size: 18px;
+		vertical-align: middle;
+		padding-right: 5px;
+	}
+
+	a {
+		font-size: 30px;
+		padding-right: 5px;
+
+		&:hover { text-decoration: none; }
+	}
+
+	.icon-facebook {
+		@facebook_color: #304890;
+		color:@facebook_color;
+		&:hover { color:darken(@facebook_color, 10%); }
+	}
+
+	.icon-google-plus {
+		@googleplus_color: #D34836;
+		color:@googleplus_color;
+		&:hover { color:darken(@googleplus_color, 10%); }
+	}
+
+	.icon-twitter {
+		@twitter_color: #4099FF;
+		color:@twitter_color;
+		&:hover { color:darken(@twitter_color, 10%); }
+	}
+
+	.icon-pinterest {
+		@pinterest_color: #d0251e;
+		color:@pinterest_color;
+		&:hover { color:darken(@pinterest_color, 10%); }
+	}
+}
