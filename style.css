@@ -16,27 +16,27 @@
 #social-fontawesome a:hover {
   text-decoration: none;
 }
-#social-fontawesome .icon-facebook {
+#social-fontawesome .fa-facebook {
   color: #304890;
 }
-#social-fontawesome .icon-facebook:hover {
+#social-fontawesome .fa-facebook:hover {
   color: #23356a;
 }
-#social-fontawesome .icon-google-plus {
+#social-fontawesome .fa-google-plus {
   color: #d34836;
 }
-#social-fontawesome .icon-google-plus:hover {
+#social-fontawesome .fa-google-plus:hover {
   color: #b03626;
 }
-#social-fontawesome .icon-twitter {
+#social-fontawesome .fa-twitter {
   color: #4099ff;
 }
-#social-fontawesome .icon-twitter:hover {
+#social-fontawesome .fa-twitter:hover {
   color: #0d7eff;
 }
-#social-fontawesome .icon-pinterest {
+#social-fontawesome .fa-pinterest {
   color: #d0251e;
 }
-#social-fontawesome .icon-pinterest:hover {
+#social-fontawesome .fa-pinterest:hover {
   color: #a31d18;
 }
