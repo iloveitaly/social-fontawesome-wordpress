@@ -48,5 +48,5 @@ function social_fa_add_icons($content) {
 // add styles
 add_action('wp_enqueue_scripts', 'social_fa_assets');
 function social_fa_assets() {
-	wp_enqueue_style('social-fa-style', SOCIAL_FA_PLUGIN_URL . 'style.css');
+	wp_enqueue_style('social-fa-style', SOCIAL_FA_PLUGIN_URL . 'style.css', array(), '1.0.0');
 }
