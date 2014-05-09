@@ -3,6 +3,8 @@ Social Sharing using FontAwesome for Wordpress
 
 Social sharing for WordPress using FontAwesome. Simple, clean code, no bulk.
 
+This assumes you've already installed FontAwesome.
+
 ### Customization
 
 Want to customize the social template? Copy the [default template](https://github.com/iloveitaly/wordpress-font-awesome-social/blob/master/templates/sharing.php) to `templates/social-fa-sharing.php` in your child theme.

@@ -1,12 +1,12 @@
 <?php
 
 /*
-Plugin Name: social-fontawesome-wordpress
+Plugin Name: Simple Social Icons via FontAwesome
 Description: Simple Social Icons Using FontAwesome for Wordpress
 
-Author: Michael Bianco (@iloveitaly; http://cliffsidedev.com/)
-Author URI: https://github.com/iloveitaly/social-fontawesome-wordpress
-Plugin URI: https://github.com/iloveitaly/social-fontawesome-wordpress
+Author: Michael Bianco
+Author URI: http://cliffsidemedia.com/
+Plugin URI: https://github.com/iloveitaly/wordpress-font-awesome-social
 
 Description: Simple essential sharing icons with fontawesome. Clean code, easy to customize.
 
