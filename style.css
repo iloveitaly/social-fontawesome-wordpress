@@ -1,6 +1,7 @@
 #social-fontawesome {
   margin-top: 10px;
-  padding-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   clear: both;
   border-top: 1px solid #eee;
   text-align: center;
@@ -9,7 +10,8 @@
   content: 'SPREAD THE WORD: ';
   vertical-align: middle;
   line-height: 40px;
-  padding-right: 15px;
+  padding-bottom: 10px;
+  display: block;
   letter-spacing: 1px;
   color: #cccccc;
   font-weight: bold;
@@ -47,4 +49,10 @@
 }
 #social-fontawesome .fa-pinterest:hover {
   color: #a31d18;
+}
+#social-fontawesome .fa-envelope {
+  color: #2ecc40;
+}
+#social-fontawesome .fa-envelope:hover {
+  color: #25a233;
 }
