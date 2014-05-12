@@ -25,6 +25,17 @@ function social_fa_add_icons($content) {
 		return $content;
 	}
 
+	return $content . social_generate_content('social-holder-horizontal');
+}
+
+add_action('wp_footer', 'social_floating_insert');
+function social_floating_insert() {
+	if(!is_single()) return;
+	
+	echo social_generate_content('social-holder-vertical');
+}
+
+function social_generate_content($holder_class = '') {
 	$url = urlencode(get_permalink());
 	$title = urlencode(get_the_title());
 
@@ -40,9 +51,7 @@ function social_fa_add_icons($content) {
 	$output = ob_get_contents();
 	ob_end_clean();
 
-	$content .= $output;
-
-	return $content;
+	return $output;
 }
 
 // add styles

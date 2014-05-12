@@ -1,4 +1,7 @@
-#social-fontawesome {
+@import "../../themes/roots/assets/less/bootstrap/mixins.less";
+@import "../../themes/roots/assets/less/bootstrap/variables.less";
+
+#social-holder {
 	margin-top: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -7,24 +10,9 @@
 	border-top: 1px solid #eee;
 	text-align: center;
 
-	&:before {
-		content:'SPREAD THE WORD: ';
-		vertical-align: middle;
-		line-height: 40px;
-		padding-bottom: 10px;
-		display: block;
-
-		letter-spacing: 1px;
-		color:lighten(black, 80%);
-		font-weight: bold;
-		font-size: 18px;
-	}
-
 	a {
-		font-size: 40px;
 		line-height: 1;
 		vertical-align: middle;
-		padding-right: 20px;
 
 		&:hover { text-decoration: none; }
 	}
@@ -57,5 +45,47 @@
 		@email_color: #2ECC40;
 		color: @email_color;
 		&:hover { color: darken(@email_color, 10%) }
+	}
+}
+
+.social-holder-horizontal {
+	&:before {
+		content:'SPREAD THE WORD: ';
+		vertical-align: middle;
+		line-height: 40px;
+		padding-bottom: 10px;
+		display: block;
+
+		letter-spacing: 1px;
+		color:lighten(black, 80%);
+		font-weight: bold;
+		font-size: 18px;
+	}
+
+	a {
+		padding-right: 20px;
+		font-size: 40px;
+	}
+}
+
+.social-holder-vertical {
+	position: fixed;
+	top: 130px;
+	left: 0;
+
+	padding: 10px;
+	background-color: white;
+	.box-shadow(0 0 5px rgba(0,0,0,0.1));
+
+	a {
+		font-size: 30px;
+		display: block;
+		padding-bottom: 10px;
+	}
+}
+
+@media (max-width: @screen-xs-max) {
+	.social-holder-vertical {
+		display: none;
 	}
 }

@@ -18,4 +18,4 @@ TODO
 ----
 
 * Pull Twitter handle from Yoast SEO and integrate into sharing text
-* Sticky option
+* Admin options for floating / bottom

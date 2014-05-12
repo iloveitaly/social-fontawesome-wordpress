@@ -1,4 +1,4 @@
-#social-fontawesome {
+#social-holder {
   margin-top: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -6,7 +6,44 @@
   border-top: 1px solid #eee;
   text-align: center;
 }
-#social-fontawesome:before {
+#social-holder a {
+  line-height: 1;
+  vertical-align: middle;
+}
+#social-holder a:hover {
+  text-decoration: none;
+}
+#social-holder .fa-facebook {
+  color: #304890;
+}
+#social-holder .fa-facebook:hover {
+  color: #23356a;
+}
+#social-holder .fa-google-plus {
+  color: #d34836;
+}
+#social-holder .fa-google-plus:hover {
+  color: #b03626;
+}
+#social-holder .fa-twitter {
+  color: #4099ff;
+}
+#social-holder .fa-twitter:hover {
+  color: #0d7eff;
+}
+#social-holder .fa-pinterest {
+  color: #d0251e;
+}
+#social-holder .fa-pinterest:hover {
+  color: #a31d18;
+}
+#social-holder .fa-envelope {
+  color: #2ecc40;
+}
+#social-holder .fa-envelope:hover {
+  color: #25a233;
+}
+.social-holder-horizontal:before {
   content: 'SPREAD THE WORD: ';
   vertical-align: middle;
   line-height: 40px;
@@ -17,42 +54,26 @@
   font-weight: bold;
   font-size: 18px;
 }
-#social-fontawesome a {
-  font-size: 40px;
-  line-height: 1;
-  vertical-align: middle;
+.social-holder-horizontal a {
   padding-right: 20px;
+  font-size: 40px;
 }
-#social-fontawesome a:hover {
-  text-decoration: none;
+.social-holder-vertical {
+  position: fixed;
+  top: 130px;
+  left: 0;
+  padding: 10px;
+  background-color: white;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
-#social-fontawesome .fa-facebook {
-  color: #304890;
+.social-holder-vertical a {
+  font-size: 30px;
+  display: block;
+  padding-bottom: 10px;
 }
-#social-fontawesome .fa-facebook:hover {
-  color: #23356a;
-}
-#social-fontawesome .fa-google-plus {
-  color: #d34836;
-}
-#social-fontawesome .fa-google-plus:hover {
-  color: #b03626;
-}
-#social-fontawesome .fa-twitter {
-  color: #4099ff;
-}
-#social-fontawesome .fa-twitter:hover {
-  color: #0d7eff;
-}
-#social-fontawesome .fa-pinterest {
-  color: #d0251e;
-}
-#social-fontawesome .fa-pinterest:hover {
-  color: #a31d18;
-}
-#social-fontawesome .fa-envelope {
-  color: #2ecc40;
-}
-#social-fontawesome .fa-envelope:hover {
-  color: #25a233;
+@media (max-width: 767px) {
+  .social-holder-vertical {
+    display: none;
+  }
 }
