@@ -21,7 +21,7 @@ define('SOCIAL_FA_PLUGIN_URL', plugin_dir_url(  __FILE__  ) );
 
 add_filter('the_content', 'social_fa_add_icons');
 function social_fa_add_icons($content) {
-	if(is_feed()) {
+	if(is_feed() || is_front_page()) {
 		return $content;
 	}
 
