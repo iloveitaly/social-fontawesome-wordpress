@@ -1,10 +1,47 @@
-@import "../../themes/roots/assets/less/bootstrap/mixins.less";
-@import "../../themes/roots/assets/less/bootstrap/variables.less";
+@import "../../themes/roots/assets/vendor/bootstrap/less/mixins.less";
+@import "../../themes/roots/assets/vendor/bootstrap/less/variables.less";
+
+@facebook_color: #304890;
+@googleplus_color: #D34836;
+@twitter_color: #4099FF;
+@pinterest_color: #d0251e;
+@email_color: #2ECC40;
+@youtube_color: #e52d27;
+
+.social-brand-colors {
+	.fa-facebook {
+		color:@facebook_color;
+		&:hover { color:darken(@facebook_color, 10%); }
+	}
+
+	.fa-google-plus {
+		color:@googleplus_color;
+		&:hover { color:darken(@googleplus_color, 10%); }
+	}
+
+	.fa-twitter {
+		color:@twitter_color;
+		&:hover { color:darken(@twitter_color, 10%); }
+	}
+
+	.fa-pinterest {
+		color:@pinterest_color;
+		&:hover { color:darken(@pinterest_color, 10%); }
+	}
+
+	.fa-envelope {
+		color: @email_color;
+		&:hover { color: darken(@email_color, 10%); }
+	}
+
+	.fa-youtube {
+		color: @youtube_color;
+		&:hover { color: darken(@youtube_color, 10%); }
+	}
+}
 
 #social-holder {
 	margin-top: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
 	clear:both;
 
 	border-top: 1px solid #eee;
@@ -17,38 +54,13 @@
 		&:hover { text-decoration: none; }
 	}
 
-	.fa-facebook {
-		@facebook_color: #304890;
-		color:@facebook_color;
-		&:hover { color:darken(@facebook_color, 10%); }
-	}
-
-	.fa-google-plus {
-		@googleplus_color: #D34836;
-		color:@googleplus_color;
-		&:hover { color:darken(@googleplus_color, 10%); }
-	}
-
-	.fa-twitter {
-		@twitter_color: #4099FF;
-		color:@twitter_color;
-		&:hover { color:darken(@twitter_color, 10%); }
-	}
-
-	.fa-pinterest {
-		@pinterest_color: #d0251e;
-		color:@pinterest_color;
-		&:hover { color:darken(@pinterest_color, 10%); }
-	}
-
-	.fa-envelope {
-		@email_color: #2ECC40;
-		color: @email_color;
-		&:hover { color: darken(@email_color, 10%) }
-	}
+	.social-brand-colors;
 }
 
 .social-holder-horizontal {
+	padding-top: 10px;
+	padding-bottom: 10px;
+
 	&:before {
 		content:'SPREAD THE WORD: ';
 		vertical-align: middle;
@@ -73,14 +85,23 @@
 	top: 130px;
 	left: 0;
 
-	padding: 10px;
+	padding: 0;
 	background-color: white;
 	.box-shadow(0 0 5px rgba(0,0,0,0.1));
 
 	a {
 		font-size: 30px;
 		display: block;
-		padding-bottom: 10px;
+		padding: 10px;
+		border-bottom: 1px solid #eee;
+
+		&:last-child {
+			border-bottom: none;
+		}
+
+		&:hover {
+			background-color: darken(white, 2%);
+		}
 	}
 }
 

@@ -1,7 +1,41 @@
+.social-brand-colors .fa-facebook {
+  color: #304890;
+}
+.social-brand-colors .fa-facebook:hover {
+  color: #23356a;
+}
+.social-brand-colors .fa-google-plus {
+  color: #d34836;
+}
+.social-brand-colors .fa-google-plus:hover {
+  color: #b03626;
+}
+.social-brand-colors .fa-twitter {
+  color: #4099ff;
+}
+.social-brand-colors .fa-twitter:hover {
+  color: #0d7eff;
+}
+.social-brand-colors .fa-pinterest {
+  color: #d0251e;
+}
+.social-brand-colors .fa-pinterest:hover {
+  color: #a31d18;
+}
+.social-brand-colors .fa-envelope {
+  color: #2ecc40;
+}
+.social-brand-colors .fa-envelope:hover {
+  color: #25a233;
+}
+.social-brand-colors .fa-youtube {
+  color: #e52d27;
+}
+.social-brand-colors .fa-youtube:hover {
+  color: #c21d17;
+}
 #social-holder {
   margin-top: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
   clear: both;
   border-top: 1px solid #eee;
   text-align: center;
@@ -43,6 +77,16 @@
 #social-holder .fa-envelope:hover {
   color: #25a233;
 }
+#social-holder .fa-youtube {
+  color: #e52d27;
+}
+#social-holder .fa-youtube:hover {
+  color: #c21d17;
+}
+.social-holder-horizontal {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 .social-holder-horizontal:before {
   content: 'SPREAD THE WORD: ';
   vertical-align: middle;
@@ -62,7 +106,7 @@
   position: fixed;
   top: 130px;
   left: 0;
-  padding: 10px;
+  padding: 0;
   background-color: white;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -70,7 +114,14 @@
 .social-holder-vertical a {
   font-size: 30px;
   display: block;
-  padding-bottom: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+.social-holder-vertical a:last-child {
+  border-bottom: none;
+}
+.social-holder-vertical a:hover {
+  background-color: #fafafa;
 }
 @media (max-width: 767px) {
   .social-holder-vertical {
